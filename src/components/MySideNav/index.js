@@ -19,6 +19,10 @@ function MySideNav() {
                     <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: "1.5em" }}></i></NavIcon>
                     <NavText>Home</NavText>
                 </NavItem>
+                <NavItem>
+                    <NavIcon><i className='fa fa-fw fa-message' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>Messages</NavText>
+                </NavItem>
             </SideNav.Nav>
         </SideNav>
 };
