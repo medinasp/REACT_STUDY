@@ -11,6 +11,11 @@ const Global = createGlobalStyle`
     font-family: 'Poppins', Sans-Serif;
     background-color: #f2f2f2;
   }
+
+  .mysidenav {
+    background-color: teal !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 `;
 
 export default Global;
