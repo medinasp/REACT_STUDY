@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   width: 20%;
   text-align: center;
-  background: teal;
+  background: red;
 `;
 
 export const Sidebar = styled.h1``;
