@@ -12,16 +12,31 @@ function MySideNav() {
         onSelect={selected=>{
             console.log(selected)
         }}
+        className='mysidenav'
         >
             <SideNav.Toggle />
             <SideNav.Nav defaultSelected="home">
-                <NavItem>
+                <NavItem eventkey="home">
                     <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: "1.5em" }}></i></NavIcon>
                     <NavText>Home</NavText>
                 </NavItem>
-                <NavItem>
+                <NavItem eventkey="messages">
                     <NavIcon><i className='fa fa-fw fa-message' style={{fontSize: "1.5em" }}></i></NavIcon>
                     <NavText>Messages</NavText>
+                </NavItem>
+                <NavItem eventkey="settings">
+                    <NavIcon><i className='fa fa-fw fa-solid fa-gear' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>Settings</NavText>
+                </NavItem>
+                <NavItem eventkey="charts">
+                    <NavIcon><i className='fa fa-fw fa-line-chart' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>Charts</NavText>
+                    <NavItem eventkey="new-users">
+                        <NavText>New Users</NavText>
+                    </NavItem>
+                    <NavItem eventkey="revenue">
+                        <NavText>Revenue</NavText>
+                    </NavItem>
                 </NavItem>
             </SideNav.Nav>
         </SideNav>
