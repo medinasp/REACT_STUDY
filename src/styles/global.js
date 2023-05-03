@@ -16,6 +16,12 @@ const Global = createGlobalStyle`
     background-color: teal !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  .page {
+    font-size: 5rem !important;
+    text-align: center !important;
+  }
+
 `;
 
 export default Global;
