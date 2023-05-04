@@ -14,37 +14,38 @@ function MySideNav() {
         <SideNav
             onSelect={selected=>{
                 console.log(selected);
-                const path = selected ? '/home' + selected : '';
-                navigate(path)
+                navigate(selected)
             }}
             className='mysidenav'
-            >
-                <SideNav.Toggle />
-                <SideNav.Nav defaultSelected="/home">
-                    <NavItem eventkey="/home">
-                        <NavIcon><i className='fa fa-fw fa-home' style={{fontSize: "1.5em" }}></i></NavIcon>
-                        <NavText>Home</NavText>
-                    </NavItem>
-                    <NavItem eventkey="/messages">
-                        <NavIcon><i className='fa fa-fw fa-message' style={{fontSize: "1.5em" }}></i></NavIcon>
-                        <NavText>Messages</NavText>
-                    </NavItem>
-                    <NavItem eventkey="/settings">
-                        <NavIcon><i className='fa fa-fw fa-solid fa-gear' style={{fontSize: "1.5em" }}></i></NavIcon>
-                        <NavText>Settings</NavText>
-                    </NavItem>
-                    <NavItem eventkey="/charts">
-                        <NavIcon><i className='fa fa-fw fa-line-chart' style={{fontSize: "1.5em" }}></i></NavIcon>
-                        <NavText>Charts</NavText>
-                        <NavItem eventkey="/new-users">
-                            <NavText>New Users</NavText>
-                        </NavItem>
-                        <NavItem eventkey="/revenue">
-                            <NavText>Revenue</NavText>
-                        </NavItem>
-                    </NavItem>
-                </SideNav.Nav>
-            </SideNav>
+            expanded={true}
+        >
+            <SideNav.Nav defaultSelected="/home">
+                <NavItem className="nav-item" eventKey="/fly500">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText><span className="nav-text">500 FLY</span></NavText>
+                </NavItem>
+                <NavItem className="nav-item" eventKey="/ht500">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>500 HT</NavText>
+                </NavItem>
+                <NavItem className="nav-item" eventKey="/ht410">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>410 HT</NavText>
+                </NavItem>
+                <NavItem className="nav-item" eventKey="/ht370">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>370 HT</NavText>
+                </NavItem>
+                <NavItem className="nav-item" eventKey="/ht330">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>330 HT</NavText>
+                </NavItem>
+                <NavItem className="nav-item" eventKey="/ht235">
+                    <NavIcon><i className='fa-solid fa-sailboat' style={{fontSize: "1.5em" }}></i></NavIcon>
+                    <NavText>235 HT</NavText>
+                </NavItem>
+            </SideNav.Nav>
+        </SideNav>
     );
 };
 
