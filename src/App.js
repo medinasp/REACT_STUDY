@@ -1,25 +1,25 @@
 import React from "react";
 import MySideNav from './components/MySideNav'
-import Sidebar from './components/Sidebar'
-import Resume from './components/Resume'
 import GlobalStyle from './styles/global'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Home from "./pages/Home";
-import Messages from "./pages/Messages";
-import Settings from "./pages/Settings";
-import Revenue from "./pages/Revenue";
-import NewUsers from "./pages/NewUsers";
+import Fly500 from "./pages/Fly500";
+import Ht500 from "./pages/Ht500";
+import Ht410 from "./pages/Ht410";
+import Ht370 from "./pages/Ht370";
+import Ht330 from "./pages/Ht330";
+import Ht235 from "./pages/Ht235";
 
 function App() {
   return (
     <Router >
         <MySideNav />
         <Routes>
-          <Route path='/home' element={<Home/>} />
-          <Route path='/messages' element={<Messages/>} />
-          <Route path='/new-users' element={<NewUsers/>} />
-          <Route path='/revenue' element={<Revenue/>} />
-          <Route path='/settings' element={<Settings/>} />
+          <Route path='/fly500' element={<Fly500/>} />
+          <Route path='/ht500' element={<Ht500/>} />
+          <Route path='/ht410' element={<Ht410/>} />
+          <Route path='/ht370' element={<Ht370/>} />
+          <Route path='/ht330' element={<Ht330/>} />
+          <Route path='/ht235' element={<Ht235/>} />
         </Routes>
         <GlobalStyle />
     </Router>
